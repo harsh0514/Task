@@ -24,7 +24,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-26 11:58:39.853981",
+ "modified": "2022-12-27 12:33:03.502028",
  "modified_by": "Administrator",
  "module": "custom-app",
  "name": "Employees Promotion",
@@ -44,5 +44,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }
