@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {name1} ",
+ "creation": "2022-12-26 17:00:00.301188",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "link_field",
+  "name1",
+  "last_name",
+  "status",
+  "gender",
+  "date_of_birth",
+  "age",
+  "user_image",
+  "adhaar_card_photo",
+  "date_of_birth_proof",
+  "address",
+  "email",
+  "phone_number",
+  "adhaar_card"
+ ],
+ "fields": [
+  {
+   "fetch_from": "link_field.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "link_field.age",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nReject\nApprove"
+  },
+  {
+   "fetch_from": "Profile.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fetch_from": "link_field.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fetch_from": "link_field.age",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fetch_from": "link_field.user_image",
+   "fieldname": "user_image",
+   "fieldtype": "Attach Image",
+   "label": "User Image"
+  },
+  {
+   "fieldname": "adhaar_card_photo",
+   "fieldtype": "Attach Image",
+   "label": "Adhaar card photo"
+  },
+  {
+   "fieldname": "date_of_birth_proof",
+   "fieldtype": "Attach Image",
+   "label": "Date of birth proof"
+  },
+  {
+   "fetch_from": "link_field.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "link_field.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "link_field.phone_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Int",
+   "label": "Phone number"
+  },
+  {
+   "fetch_from": "link_field.adhaar_card",
+   "fieldname": "adhaar_card",
+   "fieldtype": "Data",
+   "label": "Adhaar Card",
+   "length": 12
+  },
+  {
+   "fieldname": "link_field",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "link Field",
+   "options": "Profile"
+  }
+ ],
+ "image_field": "user_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-27 14:59:23.648260",
+ "modified_by": "Administrator",
+ "module": "custom-app",
+ "name": "Registration Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
