@@ -15,5 +15,4 @@ def get_employees(doctype, txt, searchfield, page_len, start, filters):
 		'''.format(check_new[2:-2])
 
 	emp_data= frappe.db.sql(sql)
-	print(sql)
-	return emp_data    
+	return emp_data 

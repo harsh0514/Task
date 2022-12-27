@@ -18,7 +18,6 @@
 			query:
 			  "custom_app.custom_app.doctype.employees_promotion.employees_promotion.get_employees",
 			filters: {
-				
 			  employee_list: employee_list,
 			},
 		  };
