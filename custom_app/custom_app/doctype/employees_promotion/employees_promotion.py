@@ -9,18 +9,11 @@ class EmployeesPromotion(Document):
 @frappe.whitelist()
 def get_employees(doctype, txt, searchfield, page_len, start, filters):
 	employee_list = filters.get('employee_list')
-	value = ""
-	for index, i in enumerate(employee_list):
-		if index >= 1:
-			value = value+"'"+","+"'"+i
-		else:
-			value = value+i
-	sql = """
-		select name
-		from `tabEmployee`
-		where name NOT IN ('{0}')  
-		""".format(value)
+	check_new=str(employee_list) 
+	sql = ''' 
+		select name from `tabEmployee` where  name NOT IN ('{0}') 
+		'''.format(check_new[2:-2])
+
 	emp_data= frappe.db.sql(sql)
 	print(sql)
-	return emp_data
-    
+	return emp_data    
